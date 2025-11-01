@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login - HSN</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <style>
+    .auth-container { min-height: 100vh; }
+    .auth-image { background-size: cover; background-position: center; }
+    @media (max-width: 767.98px) {
+      .auth-image { min-height: 35vh; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid auth-container d-flex align-items-center p-0">
+    <div class="row g-0 w-100">
+      <!-- Image column: show on md and up as left half; on small screens it stacks above -->
+      <div class="col-12 col-md-6 auth-image" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1400&auto=format&fit=crop&s=abcdef');">
+      </div>
+
+      <!-- Form column -->
+      <div class="col-12 col-md-6 d-flex align-items-center">
+        <div class="w-100 px-4 py-5" style="max-width:480px; margin:auto;">
+          <h2 class="mb-3">Welcome back</h2>
+          <p class="text-muted mb-4">Sign in to your account</p>
+
+          <form action="#" method="post">
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="remember">
+                <label class="form-check-label" for="remember">Remember me</label>
+              </div>
+              <a href="#" class="small">Forgot password?</a>
+            </div>
+
+            <div class="d-grid mb-3">
+              <button class="btn btn-primary" type="submit">Login</button>
+            </div>
+
+            <p class="text-center small text-muted">Don't have an account? <a href="register.html">Create one</a></p>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+
+</html>
